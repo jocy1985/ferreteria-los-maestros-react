@@ -1,0 +1,311 @@
+:root {
+  --maestros-oscuro: #1f2933;
+  --maestros-amarillo: #f2b705;
+  --maestros-fondo: #f7f7f5;
+  --maestros-borde: #d9dde2;
+  --maestros-texto-suave: #5d6670;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #20252b;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: #805f00;
+}
+
+a:hover {
+  color: #4f3b00;
+}
+
+.salto-contenido {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: #fff;
+  color: #111;
+  padding: 0.75rem 1rem;
+}
+
+.salto-contenido:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.cabecera-sitio {
+  background: var(--maestros-oscuro);
+  border-bottom: 4px solid var(--maestros-amarillo);
+}
+
+.marca {
+  color: #fff !important;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.enlace-menu {
+  color: rgba(255, 255, 255, 0.88) !important;
+  border-radius: 0.5rem;
+  padding-inline: 0.85rem !important;
+}
+
+.enlace-menu:hover,
+.enlace-menu.activo {
+  color: #111 !important;
+  background: var(--maestros-amarillo);
+}
+
+.hero-react {
+  background: linear-gradient(135deg, #192129, #313e49);
+  color: #fff;
+}
+
+.hero-imagen {
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+.etiqueta {
+  margin-bottom: 0.35rem;
+  color: #9a7200;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.hero-react .etiqueta {
+  color: #ffd85a;
+}
+
+.texto-suave {
+  color: var(--maestros-texto-suave);
+}
+
+.seccion-suave {
+  background: var(--maestros-fondo);
+}
+
+.imagen-destacada,
+.imagen-producto-react {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+  padding: 1rem;
+}
+
+.tarjeta-producto {
+  border-color: var(--maestros-borde);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-3px);
+}
+
+.precio-producto,
+.precio-detalle {
+  font-weight: 800;
+  color: #222;
+}
+
+.precio-producto {
+  font-size: 1.35rem;
+}
+
+.precio-detalle {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.precio-producto small,
+.precio-detalle small {
+  font-size: 0.65em;
+  font-weight: 500;
+  color: var(--maestros-texto-suave);
+}
+
+.filtros-react {
+  background: var(--maestros-fondo);
+  border: 1px solid var(--maestros-borde);
+}
+
+.mensaje-estado {
+  min-height: 1.5rem;
+  color: var(--maestros-texto-suave);
+}
+
+.tarjeta-categoria {
+  border-top: 4px solid var(--maestros-amarillo);
+}
+
+.seccion-categorias-inicio {
+  background: #fff;
+}
+
+.tarjeta-categoria-inicio {
+  border: 1px solid var(--maestros-borde);
+  border-top: 4px solid var(--maestros-amarillo);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tarjeta-categoria-inicio:hover {
+  transform: translateY(-3px);
+}
+
+.detalle-imagen {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.detalle-stock {
+  background: #f5f6f7;
+  border-left: 4px solid var(--maestros-amarillo);
+}
+
+.mapa-imagen-react {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+}
+
+.pie-sitio {
+  background: #151b21;
+  color: #e8edf1;
+  padding: 2.5rem 0;
+}
+
+.pie-sitio a {
+  color: #ffd85a;
+}
+
+@media (max-width: 767.98px) {
+  .enlace-menu {
+    margin-top: 0.35rem;
+  }
+
+  .hero-react .btn {
+    width: 100%;
+  }
+}
+
+/* Evaluación Parcial 2 · Integrante 2 */
+.tarjeta-formulario {
+  border-top: 5px solid var(--maestros-amarillo) !important;
+}
+
+.dato-panel {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+.resumen-checkout {
+  top: 1rem;
+}
+
+.confirmacion-compra,
+.bloque-resultado-pago {
+  max-width: 920px;
+}
+
+.icono-exito {
+  display: inline-grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #198754;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.resumen-total-compra {
+  padding: 1.25rem;
+  background: var(--maestros-fondo);
+  border-radius: 0.75rem;
+}
+
+.badge-oferta {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.precio-anterior {
+  color: var(--maestros-texto-suave);
+  text-decoration: line-through;
+  font-size: 0.95rem;
+}
+
+.precio-anterior.detalle {
+  font-size: 1.1rem;
+}
+
+.precio-oferta {
+  color: #b42318;
+}
+
+@media (max-width: 767.98px) {
+  .cabecera-sitio .btn {
+    width: 100%;
+    margin-top: 0.35rem;
+  }
+
+  .resumen-total-compra .btn {
+    width: 100%;
+  }
+}
+
+/* Evaluación Parcial 2 · Integrante 3 */
+.imagen-carrito-react {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.cantidad-carrito {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.5rem;
+  min-height: 2.1rem;
+  border: 1px solid var(--maestros-borde);
+  border-radius: 0.4rem;
+  font-weight: 700;
+}
+
+.resumen-carrito-react {
+  top: 1rem;
+}
+
+.dato-grande {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.item-carrito-react {
+  border-left: 4px solid var(--maestros-amarillo);
+}
+
+@media (max-width: 575.98px) {
+  .imagen-carrito-react {
+    height: 170px;
+  }
+}
