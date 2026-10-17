@@ -1,6 +1,6 @@
 # Ferretería Los Maestros - Evaluación Parcial 2
 
-Migración a React + Vite del proyecto desarrollado en la Evaluación Parcial 1 de DSY1104.
+Migración a React + Vite del proyecto desarrollado en la Evaluación Parcial 2 de DSY1104.
 
 ## Estado actual
 
