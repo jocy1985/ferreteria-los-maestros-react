@@ -21,7 +21,7 @@ function DetalleProducto() {
     <Container className="py-5">
       <Button as={Link} to="/catalogo" variant="link" className="px-0 mb-3">← Volver al catálogo</Button>
       {mensaje && <Alert variant="info">{mensaje}</Alert>}
-      <Row className="g-5 align-items-start">
+      <Row className="g-4 g-lg-5 align-items-start">
         <Col xs={12} lg={6}><img src={producto.imagen} alt={producto.nombre} className="img-fluid rounded-4 border detalle-imagen" /></Col>
         <Col xs={12} lg={6}>
           <div className="d-flex flex-wrap gap-2 mb-3"><Badge bg="secondary">{producto.codigo}</Badge>{enOferta && <Badge bg="danger">Oferta</Badge>}<Badge bg={stockBajo ? "warning" : "success"} text={stockBajo ? "dark" : undefined}>{stockBajo ? "Stock bajo" : "Disponible"}</Badge></div>

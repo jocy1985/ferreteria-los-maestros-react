@@ -14,12 +14,12 @@ function Cabecera() {
   const nombrePanel = usuario?.rol === "Administrador" ? "Administración" : usuario?.rol === "Empleado" ? "Panel empleado" : "Mi cuenta";
 
   return (
-    <Navbar expand="md" className="cabecera-sitio" data-bs-theme="dark">
+    <Navbar expand="lg" className="cabecera-sitio" data-bs-theme="dark">
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="marca">Ferretería Los Maestros</Navbar.Brand>
         <Navbar.Toggle aria-controls="menu-principal" />
         <Navbar.Collapse id="menu-principal">
-          <Nav className="ms-auto align-items-md-center gap-md-2">
+          <Nav className="ms-auto align-items-lg-center gap-lg-2">
             <NavLink to="/" end className={claseEnlace}>Inicio</NavLink>
             <NavLink to="/catalogo" className={claseEnlace}>Catálogo</NavLink>
             <NavLink to="/ofertas" className={claseEnlace}>Ofertas</NavLink>
